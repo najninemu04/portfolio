@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+ <nav class="navbar">
+  <ul class="nav-left">
+    <li><a href="#home" class="nav-link">Home</a></li>
+    <li><a href="#vlog" class="nav-link">Blog</a></li>
+    <li><a href="#services" class="nav-link">Services</a></li>
+  </ul>
+  
+  <div class="brand">MAYA</div>
+  
+  <ul class="nav-right">
+    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+    <li><a href="#skills" class="nav-link">Skills</a></li>
+    <li><a href="#education" class="nav-link">Education</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#contacts" class="nav-link">Contacts</a></li>
+  </ul>
+</nav>
+
+
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>HELLO</h1>
+    <h2>I AM A WEB DESIGNER</h2>
+    <form class="resume-form" id="resumeForm">
+      <input type="email" placeholder="Email" required />
+      <button type="submit" id="getResumeBtn">GET MY RESUME</button>
+    </form>
+    <small>* Get my resume directly in your mailbox</small>
+    
+    <!-- THIS MUST BE INCLUDED -->
+    <div id="pdfContainer" style="display:none;">
+      <h3>Your Resume:</h3>
+      <iframe id="resumeIframe" src="Images/My Cv .pdf" width="100%" height="500px"></iframe>
+    </div>
+</header>
+
+<section class="services-section" id="services">
+  <div class="container">
+    <h3 class="subheading">MY SERVICES</h3>
+    <h2 class="heading">DESIGNED WITH CARE,<br>FILLED WITH CREATIVE ELEMENTS.</h2>
+    <div class="services-grid">
+      <!-- Top row of 3 cards -->
+      <div class="service-box" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-content">
+          <img src="Images/web7.jpg" alt="Web Design" />
+          <h4>WEB DESIGN</h4>
+          <p>Creating visually appealing and functional website designs.</p>
+        </div>
+        <div class="overlay"></div>
+      </div>
+
+      <div class="service-box" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-content">
+          <img src="Images/web16.jpg" alt="Web Development" />
+          <h4>Web Application Development</h4>
+          <p>Building interactive and dynamic web applications.</p>
+        </div>
+        <div class="overlay"></div>
+      </div>
+
+      <div class="service-box" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-content">
+          <img src="Images/productdesign.jpg" alt="Product Design" />
+          <h4>PRODUCT DESIGN</h4>
+          <p>Innovative designs for products that stand out in the market.</p>
+        </div>
+        <div class="overlay"></div>
+      </div>
+
+      <!-- Bottom row of 3 cards -->
+      <div class="service-box" data-aos="fade-up" data-aos-delay="400">
+        <div class="card-content">
+          <img src="Images/uiux.jpg" alt="UI/UX Design" />
+          <h4>UI/UX DESIGN</h4>
+          <p>Enhancing user experiences through sleek, user-centered designs.</p>
+        </div>
+        <div class="overlay"></div>
+      </div>
+
+      <div class="service-box" data-aos="fade-up" data-aos-delay="500">
+        <div class="card-content">
+          <img src="Images/ecom.jpg" alt="E-commerce Development" />
+          <h4>E-commerce Website Development</h4>
+          <p>Building responsive, scalable, and high-performing e-commerce sites.</p>
+        </div>
+        <div class="overlay"></div>
+      </div>
+
+      <div class="service-box" data-aos="fade-up" data-aos-delay="600">
+        <div class="card-content">
+          <img src="Images/responsive7.jpg" alt="Responsive Web Design" />
+          <h4>Responsive Website</h4>
+          <p>Ensuring your website looks great on all devices and screen sizes.</p>
+        </div>
+        <div class="overlay"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- portfolio -->
+  <section id="portfolio" class="portfolio-section" data-aos="fade-up">
+    <div class="container">
+      <h5 class="section-subtitle" data-aos="fade-down">MY WORKS</h5>
+      <h2 data-aos="fade-up" data-aos-delay="100">
+        I CREATE THE BEST PRODUCT QUALITY AND I AM BEST AT THIS.
+      </h2>
+    </div>
+  </section>
+  
+      <div class="portfolio-items">
+        <!-- Item 1 -->
+        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
+          <img src="Images/work2.png" alt="Creative Web Design">
+          <div class="portfolio-content">
+            <h3>Creative Web Design</h3>
+            <p class="category">Web Design / Front-End Development</p>
+            <p class="description">This project focuses on creating a seamless user experience with a responsive, creative web design. The aim is to combine functionality with visually appealing layouts.</p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
+          <img src="Images/work1.png" alt="Brand Identity">
+          <div class="portfolio-content">
+            <h3>Brand Identity</h3>
+            <p class="category">Branding / Graphic Design</p>
+            <p class="description">This project demonstrates how branding can be elevated through creative logos, typography, and colors that represent the essence of the brand's identity.</p>
+          </div>
+        </div>
+  
+        <!-- Item 3 -->
+        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="300">
+          <img src="Images/work3.png" alt="UI/UX Design">
+          <div class="portfolio-content">
+            <h3>UI/UX Design</h3>
+            <p class="category">UI/UX Design / Web Development</p>
+            <p class="description">A design solution that brings user experience into focus, creating intuitive interfaces with modern web technologies to ensure the best performance.</p>
+          </div>
+        </div>
+  
+        <!-- Item 4 -->
+        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="400">
+          <img src="Images/casestudy.png" alt="Case Study & Illustration">
+          <div class="portfolio-content">
+            <h3>Case Study & Illustration</h3>
+            <p class="category">Illustration / Research</p>
+            <p class="description">This case study is a blend of research and illustrations used to represent complex ideas visually. The goal is to simplify and communicate complex concepts effectively.</p>
+          </div>
+        </div>
+  
+        <!-- Item 5 -->
+        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="500">
+          <img src="Images/work5.png" alt="Creative Sketches">
+          <div class="portfolio-content">
+            <h3>Creative Sketches</h3>
+            <p class="category">Illustration / Drawing</p>
+            <p class="description">Exploring the beauty of hand-drawn illustrations, this project brings sketches to life, blending traditional art with modern digital media.</p>
+          </div>
+        </div>
+  
+        <!-- Item 6 -->
+        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="600">
+          <img src="Images/work6.png" alt="Branding Concept">
+          <div class="portfolio-content">
+            <h3>Branding Concept</h3>
+            <p class="category">Branding / Strategy</p>
+            <p class="description">The goal of this project is to create a branding concept that reflects the core values of the business, ensuring a strong and recognizable identity across all platforms.</p>
+          </div>
+        </div>
+  
+        <!-- Item 7 -->
+        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="700">
+          <img src="Images/Card1.png" alt="Marketing Strategy">
+          <div class="portfolio-content">
+            <h3>Marketing Strategy</h3>
+            <p class="category">Content Creation / Strategy</p>
+            <p class="description">This project showcases a detailed marketing strategy with engaging copywriting and a tailored plan that drives results, aiming to boost client visibility and engagement.</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <!-- skill -->
+
+  <section id="skills" class="skills-section">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-container">
+      <!-- Skill Cards -->
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+        <p>HTML5</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+        <p>CSS3</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+        <p>Bootstrap</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass">
+        <p>Sass</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- education -->
+  <section id="education" class="education-section">
+    <h2 class="section-title">My Education</h2>
+  
+    <!-- Higher Secondary Certificate (HSC) -->
+   <!-- Higher Secondary Certificate (HSC) -->
+<div class="timeline-content" id="hsc-timeline">
+  <div class="icon">
+    <i class="fas fa-graduation-cap"></i>
+  </div>
+  <div class="text">
+    <h3>Higher Secondary Certificate (HSC)</h3>
+    <span class="date">Year: 2020</span>
+    <p class="institution-name">College: <strong>Cambrian School And College</strong></p>
+    <p class="description">Completed my HSC with a focus on science and technology, gaining essential problem-solving skills.</p>
+  </div>
+</div>
+
+<!-- Bachelor's Degree -->
+<div class="timeline-content" id="bachelors-timeline">
+  <div class="icon">
+    <i class="fas fa-graduation-cap"></i>
+  </div>
+  <div class="text">
+    <h3>Bachelor's Degree in Computer Science & Engineering</h3>
+    <span class="date">Year: 2024</span>
+    <p class="institution-name">University: <strong>Sonargaon University</strong></p>
+    <p class="description">Graduated with a degree in Computer Science and Engineering, specializing in web development and machine learning.</p>
+  </div>
+</div>
+
+  </section>
+
+  <!-- my vlog -->
+  
+  <section id="vlog" class="vlog-section">
+    <h2 class="section-title">My Vlog</h2>
+    <p class="section-subtitle">Some of my recent creative works</p>
+  
+    <div class="vlog-grid">
+        <div class="vlog-item" data-img="project1-large.jpg">
+            <img src="Images/work1.png" alt="Images">
+            <div class="overlay">View Project</div>
+        </div>
+        <div class="vlog-item" data-img="project2-large.jpg">
+            <img src="Images/Card(2).png" alt="Images">
+            <div class="overlay">View Project</div>
+        </div>
+        <div class="vlog-item" data-img="project3-large.jpg">
+            <img src="Images/casestudy.png" alt="Images">
+            <div class="overlay">View Project</div>
+        </div>
+        <div class="vlog-item" data-img="project4-large.jpg">
+            <img src="Images/Illustration copy.png" alt="Images">
+            <div class="overlay">View Project</div>
+        </div>
+    </div>
+  
+    <!-- Modal for image popup -->
+    <div id="imageModal" class="image-modal">
+        <span class="close">&times;</span>
+        <img id="modalImg" src="" alt="Project View">
+    </div>
+</section>
+
+
+
+<!-- about -->
+<section id="about" class="about-section">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-subtitle" data-aos="fade-left">A brief story about who I am and what I do</p>
+    <div class="about-content">
+      <img src="Images/mypic.jpeg" alt="My Photo" class="Image" />
+      <div class="about-text">
+        <p>Hello! I’m a passionate Web Designer with a love for clean code, creative layouts, and pixel-perfect designs. I specialize in front-end development and always aim to deliver unique and user-friendly digital experiences.</p>
+        <p>With a background in both graphic and UI/UX design, I bring a versatile approach to building modern and engaging websites. Let's make something amazing together!</p>
+      </div>
+    </div>
+
+    <!-- Hobbies Section -->
+    <div class="hobbies-section">
+      <h3 class="hobbies-title">My Hobbies</h3>
+      <p class="hobbies-description">Apart from web design, I love to explore new things. Here are a few things I enjoy doing in my free time:</p>
+      <div class="hobbies-list">
+        <div class="hobby-item">
+          <i class="fas fa-code"></i> <!-- Icon for Coding -->
+          <p>Coding and experimenting with new technologies</p>
+        </div>
+        <div class="hobby-item">
+          <i class="fas fa-paint-brush"></i> <!-- Icon for Art -->
+          <p>Sketching and digital artwork</p>
+        </div>
+        <div class="hobby-item">
+          <i class="fas fa-camera"></i> <!-- Icon for Photography -->
+          <p>Photography and capturing moments</p>
+        </div>
+        <div class="hobby-item">
+          <i class="fas fa-book"></i> <!-- Icon for Reading -->
+          <p>Reading books about design and development</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--  -->
+
+
+<section id="skills-and-experience" class="skills-experience-section">
+  <div class="container">
+    <h2 class="section-title">My Skills & Experience</h2>
+    
+    <!-- Progress Bars for Skills -->
+    <div class="skills-progress">
+      <h3>Skills</h3>
+      <div class="progress-bar">
+        <label for="html">HTML</label>
+        <div class="progress">
+          <div class="progress-fill" id="html-progress" style="width: 85%"></div>
+        </div>
+        <span>85%</span>
+      </div>
+
+      <div class="progress-bar">
+        <label for="css">CSS</label>
+        <div class="progress">
+          <div class="progress-fill" id="css-progress" style="width: 90%"></div>
+        </div>
+        <span>90%</span>
+      </div>
+
+      <div class="progress-bar">
+        <label for="js">JavaScript</label>
+        <div class="progress">
+          <div class="progress-fill" id="js-progress" style="width: 70%"></div>
+        </div>
+        <span>70%</span>
+      </div>
+    </div>
+
+    <!-- Experience Slider -->
+    <div class="experience-slider">
+      <h3>Experience</h3>
+      <input type="range" id="experienceRange" min="1" max="5" step="1" value="1" class="slider">
+      <p class="slider-output">Year: <span id="slider-value">2023</span></p>
+      <div class="experience-details">
+        <p id="experience-description">Started my journey with a basic understanding of web development.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- contacts -->
+<section id="contacts" class="contacts-section">
+  <div class="container">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-subtitle">Feel free to reach out for collaborations or just a friendly hello 👋</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+  
+
+  <script src="js/main.js" ></script>
