@@ -1,0 +1,167 @@
+/* Responsive for Mobile Devices (320px - 480px) */
+@media (max-width: 480px) {
+    body {
+      padding-top: 60px; /* Adjust top padding for mobile */
+    }
+  
+    .navbar {
+      flex-direction: column;
+      padding: 10px 15px;
+    }
+  
+    .nav-left, .nav-right {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    .brand {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    .navbar a {
+      font-size: 12px;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-content h2 {
+      font-size: 1.2rem;
+    }
+  
+    .resume-form input {
+      width: 180px;
+    }
+  
+    .resume-form button {
+      padding: 8px 15px;
+    }
+  
+    .services-section .heading {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  
+    .services-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .portfolio-section h2 {
+      font-size: 22px;
+    }
+  
+    .portfolio-items {
+      flex-direction: column;
+    }
+  
+    .portfolio-item {
+      flex-direction: column;
+    }
+  
+    .skills-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .skill-card {
+      width: 120px;
+      padding: 10px;
+    }
+  
+    .about-text {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  
+    .Image {
+      width: 180px;
+      height: 180px;
+    }
+  
+    .hobbies-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hobby-item {
+      width: 130px;
+    }
+  
+    .contact-form {
+      width: 100%;
+    }
+  }
+  
+  /* Responsive for Tablets (481px - 768px) */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 15px 25px;
+    }
+  
+    .nav-left, .nav-right {
+      flex-direction: row;
+      gap: 15px;
+    }
+  
+    .hero-content h1 {
+      font-size: 3.5rem;
+    }
+  
+    .hero-content h2 {
+      font-size: 1.4rem;
+    }
+  
+    .resume-form input {
+      width: 220px;
+    }
+  
+    .services-section .heading {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+  
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .portfolio-section h2 {
+      font-size: 24px;
+    }
+  
+    .portfolio-items {
+      flex-direction: column;
+    }
+  
+    .skills-container {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    .skill-card {
+      width: 140px;
+      padding: 15px;
+    }
+  
+    .about-text {
+      font-size: 16px;
+    }
+  
+    .Image {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .hobbies-list {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .contact-form {
+      width: 80%;
+    }
+  }
+  

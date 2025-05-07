@@ -1,3 +1,4 @@
+
 /* Base reset */
 * {
   margin: 0;
@@ -8,19 +9,41 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #0c0e1c;
   color: white;
+  padding-top: 80px; /* Prevent navbar overlap */
 }
+
+/* === NAVBAR === */
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0c0e1c; /* Dark to match theme */
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #0b0d1a;
-  padding: 20px 60px;
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
-.navbar ul {
+
+/* Navbar left/right */
+.nav-left, .nav-right {
   list-style: none;
   display: flex;
   gap: 20px;
+  padding: 0;
+  margin: 0;
 }
+
+/* Navbar brand */
+.brand {
+  font-weight: 700;
+  font-size: 24px;
+  color: #f7c23c;
+}
+
+/* Links */
 .navbar a {
   text-decoration: none;
   color: white;
@@ -31,20 +54,14 @@ body {
 .navbar a:hover {
   color: #f7c23c;
 }
-
-
-.brand {
-  font-weight: 700;
-  font-size: 18px;
-}
-
+/* resume  */
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 90vh;
   background-color: #0c0e1c;
-  background-image: url('bg-pattern.png'); /* optional */
+  background-image: url('bg-pattern.png'); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -669,36 +686,49 @@ small {
 .hobbies-title {
   font-size: 30px;
   font-weight: 700;
-  color: transparent; /* Make the text transparent to show the gradient */
+  color: transparent; 
   background: linear-gradient(90deg, #FF7F50, #00BFFF, #32CD32); /* Gradient colors */
-  -webkit-background-clip: text; /* Make the gradient apply to text only */
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to enhance readability */
+  -webkit-background-clip: text; 
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); 
   letter-spacing: 1px;
   transition: all 0.3s ease-in-out;
 }
 
 .hobbies-title:hover {
-  background: linear-gradient(90deg, #FF6347, #40E0D0, #FFD700); /* Hover effect with different colors */
+  background: linear-gradient(90deg, #FF6347, #40E0D0, #FFD700);
 }
 
 /* Skills & Experience Section */
 .skills-experience-section {
   padding: 60px 0;
-  background-color: #f8f8f8; /* Light gray background */
-  text-align: center; /* Centered text */
-}
+  background-color: #f8f8f8; 
+  text-align: center;}
 
 .section-title {
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 40px;
   color: #333333;
-  text-transform: uppercase; /* Optional: makes it look more professional */
+  text-transform: uppercase; 
 }
 
 /* Progress Bar */
+.skills-experience-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
 .skills-progress {
-  margin-bottom: 40px;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .progress-bar {
@@ -706,35 +736,33 @@ small {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 600px; /* Limit width for readability */
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .progress {
-  background-color: #e1e1e1; /* Light background for progress bars */
-  height: 10px;
+  background-color: #e1e1e1;
   border-radius: 5px;
-  overflow: hidden;
-  width: 100%;
+  width: 80%;  
+  height: 15px;  
 }
 
 .progress-fill {
-  background-color: #00aaff; /* Blue color for filled progress */
+  background-color: #00aaff;
   height: 100%;
+  border-radius: 5px;
 }
 
 .progress-bar label {
   font-size: 16px;
   margin-right: 10px;
-  color: #333; /* Dark text color for labels */
+  color: #333;
 }
 
 .progress-bar span {
   font-size: 16px;
   font-weight: bold;
-  color: #333; /* Dark text color for progress values */
+  color: #333;
 }
+
 
 /* Slider */
 .experience-slider {
@@ -759,8 +787,7 @@ small {
   outline: none;
   transition: opacity .15s ease-in-out;
   margin-bottom: 20px;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Adding slight shadow for depth */
-}
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); }
 
 .experience-slider h3 {
   color: #333;
@@ -781,9 +808,8 @@ small {
 }
 
 .slider::-webkit-slider-thumb:hover {
-  background-color: #0088cc; /* Darken color when hovering */
-  transform: scale(1.2); /* Slightly scale the thumb on hover for a cool effect */
-}
+  background-color: #0088cc; 
+  transform: scale(1.2); }
 
 .slider::-webkit-slider-thumb:active {
   transform: scale(1.1); /* Slight scaling effect on click */
