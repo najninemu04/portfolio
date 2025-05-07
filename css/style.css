@@ -588,15 +588,18 @@ small {
 .section-subtitle {
   font-size: 20px;
   font-weight: 500;
-  color: #777;
   margin-bottom: 40px;
+  display: inline-block; 
   background: linear-gradient(90deg, #FF7F50, #00BFFF, #32CD32);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  -webkit-text-fill-color: transparent; 
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   letter-spacing: 1px;
   transition: all 0.3s ease-in-out;
 }
+
 
 .section-subtitle:hover {
   background: linear-gradient(90deg, #FF6347, #40E0D0, #FFD700);
@@ -687,8 +690,8 @@ small {
   font-size: 30px;
   font-weight: 700;
   color: transparent; 
-  background: linear-gradient(90deg, #FF7F50, #00BFFF, #32CD32); /* Gradient colors */
-  -webkit-background-clip: text; 
+  background: linear-gradient(90deg, #FF7F50, #00BFFF, #32CD32); 
+  background-clip: text; 
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); 
   letter-spacing: 1px;
   transition: all 0.3s ease-in-out;
